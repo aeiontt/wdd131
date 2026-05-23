@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Page</title>
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Nigeria</h1>
+</header>
+
+<main>
+
+  <!-- HERO IMAGE (responsive srcset) -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+      <img src="images/hero-small.webp" alt="Scenic view of Nigeria">
+    </picture>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section class="info">
+    <h2>About</h2>
+    <p>Nigeria is a vibrant country in West Africa known for its culture, music, and landscapes.</p>
+  </section>
+
+  <!-- WEATHER SECTION -->
+  <section class="weather">
+    <h2>Weather ⛅</h2>
+
+    <img src="images/weather-icon.svg" alt="weather icon">
+
+    <p>Temperature: <span id="temp">30</span>°C</p>
+    <p>Wind Speed: <span id="wind">10</span> km/h</p>
+
+    <p>Wind Chill: <span id="windchill"></span></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> | Last Modified: <span id="lastmod"></span></p>
+</footer>
+
+</body>
+</html>
