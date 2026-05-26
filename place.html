@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
 
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+        content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Explore Nigeria's culture, landmarks, weather, and attractions.">
+        content="Discover Nigeria, its culture, attractions, weather, and landmarks.">
 
     <meta name="author"
-          content="Bamisile Oluwadamilare Emmanuel">
+        content="Bamisile Oluwadamilare Emmanuel">
 
     <title>Nigeria Country Page</title>
 
-    <link rel="stylesheet"
-          href="styles/place.css">
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
 
 </head>
 
@@ -36,69 +38,53 @@
 
             <picture>
 
-                <source media="(min-width: 800px)"
-                        srcset="images/hero-large.webp">
+                <source media="(min-width: 768px)"
+                    srcset="images/hero-large.webp">
 
                 <img src="images/hero-small.webp"
-                     alt="Beautiful landscape view of Nigeria">
+                    alt="Beautiful view of Nigeria">
 
             </picture>
 
         </section>
 
-        <!-- ABOUT SECTION -->
+        <!-- DATA SECTION -->
 
-        <section>
+        <section class="card data">
 
-            <h2>About Nigeria</h2>
+            <h2>Data</h2>
 
-            <p>
-                Nigeria is a country located in West Africa.
-                It is known for its rich culture, music,
-                food, beautiful landmarks, and diverse people.
-            </p>
+            <p><strong>Capital:</strong> Abuja</p>
 
-        </section>
+            <p><strong>Population:</strong> 223 Million</p>
 
-        <!-- PLACES SECTION -->
+            <p><strong>Language:</strong> English</p>
 
-        <section>
+            <p><strong>Currency:</strong> Naira</p>
 
-            <h2>Popular Places</h2>
-
-            <img src="images/lagos.webp"
-                 alt="Lagos city skyline">
-
-            <p>
-                Lagos is one of the busiest cities in Africa
-                and is famous for entertainment, nightlife,
-                tourism, and business activities.
-            </p>
+            <p><strong>Continent:</strong> Africa</p>
 
         </section>
 
         <!-- WEATHER SECTION -->
 
-        <section class="weather">
+        <section class="card weather">
 
             <h2>Weather</h2>
 
-            <img src="images/weather-icon.jpg"
-                 alt="Weather icon"
-                 class="weather-icon">
+            <img src="images/weather-icon.svg"
+                alt="Weather Icon"
+                class="weather-icon">
 
-            <p>
-                Temperature:
-                <span id="temp">28</span>°C
+            <p><strong>Temperature:</strong>
+                <span id="temperature">28</span>°C
             </p>
 
-            <p>
-                Wind Speed:
-                <span id="speed">10</span> km/h
+            <p><strong>Wind Speed:</strong>
+                <span id="windspeed">10</span> km/h
             </p>
 
-            <p>
-                Wind Chill:
+            <p><strong>Wind Chill:</strong>
                 <span id="windchill"></span>
             </p>
 
@@ -109,14 +95,16 @@
     <footer>
 
         <p>
-            ©2026 | Bamisile Oluwadamilare Emmanuel | Nigeria
+            &copy;
+            <span id="currentyear"></span>
+            | Bamisile Oluwadamilare Emmanuel
+            | Nigeria
         </p>
 
         <p id="lastModified"></p>
 
     </footer>
 
-    <script src="scripts/place.js"></script>
-
 </body>
+
 </html>
