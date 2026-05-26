@@ -1,53 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Place Page</title>
 
-  <link rel="stylesheet" href="styles/place.css">
-  <script defer src="scripts/place.js"></script>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore Nigeria's culture, landmarks, weather, and attractions.">
+
+    <meta name="author"
+          content="Bamisile Oluwadamilare Emmanuel">
+
+    <title>Nigeria Country Page</title>
+
+    <link rel="stylesheet"
+          href="styles/place.css">
+
 </head>
 
 <body>
 
-<header>
-  <h1>Nigeria</h1>
-</header>
+    <header>
 
-<main>
+        <h1>Nigeria</h1>
 
-  <!-- HERO IMAGE (responsive srcset) -->
-  <section class="hero">
-    <picture>
-      <source srcset="images/hero-large.webp" media="(min-width: 768px)">
-      <img src="images/hero-small.webp" alt="Scenic view of Nigeria">
-    </picture>
-  </section>
+    </header>
 
-  <!-- INFO SECTION -->
-  <section class="info">
-    <h2>About</h2>
-    <p>Nigeria is a vibrant country in West Africa known for its culture, music, and landscapes.</p>
-  </section>
+    <main>
 
-  <!-- WEATHER SECTION -->
-  <section class="weather">
-    <h2>Weather ⛅</h2>
+        <!-- HERO SECTION -->
 
-    <img src="images/weather-icon.jpg" alt="weather icon">
+        <section class="hero">
 
-    <p>Temperature: <span id="temp">30</span>°C</p>
-    <p>Wind Speed: <span id="wind">10</span> km/h</p>
+            <picture>
 
-    <p>Wind Chill: <span id="windchill"></span></p>
-  </section>
+                <source media="(min-width: 800px)"
+                        srcset="images/hero-large.webp">
 
-</main>
+                <img src="images/hero-small.webp"
+                     alt="Beautiful landscape view of Nigeria">
 
-<footer>
-  <p>&copy; <span id="year"></span> | Last Modified: <span id="lastmod"></span></p>
-</footer>
+            </picture>
+
+        </section>
+
+        <!-- ABOUT SECTION -->
+
+        <section>
+
+            <h2>About Nigeria</h2>
+
+            <p>
+                Nigeria is a country located in West Africa.
+                It is known for its rich culture, music,
+                food, beautiful landmarks, and diverse people.
+            </p>
+
+        </section>
+
+        <!-- PLACES SECTION -->
+
+        <section>
+
+            <h2>Popular Places</h2>
+
+            <img src="images/lagos.webp"
+                 alt="Lagos city skyline">
+
+            <p>
+                Lagos is one of the busiest cities in Africa
+                and is famous for entertainment, nightlife,
+                tourism, and business activities.
+            </p>
+
+        </section>
+
+        <!-- WEATHER SECTION -->
+
+        <section class="weather">
+
+            <h2>Weather</h2>
+
+            <img src="images/weather-icon.jpg"
+                 alt="Weather icon"
+                 class="weather-icon">
+
+            <p>
+                Temperature:
+                <span id="temp">28</span>°C
+            </p>
+
+            <p>
+                Wind Speed:
+                <span id="speed">10</span> km/h
+            </p>
+
+            <p>
+                Wind Chill:
+                <span id="windchill"></span>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            ©2026 | Bamisile Oluwadamilare Emmanuel | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+    <script src="scripts/place.js"></script>
 
 </body>
 </html>

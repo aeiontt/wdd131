@@ -1,22 +1,28 @@
-// Footer
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastmod").textContent = document.lastModified;
+const temperature = 28;
+const windSpeed = 10;
 
-// Static weather values
-const temp = 30; // °C
-const wind = 10; // km/h
+function calculateWindChill(temp, speed) {
 
-// Wind chill function (ONE-LINE return as required)
-function calculateWindChill(t, s) {
-  return (13.12 + 0.6215 * t - 11.37 * Math.pow(s, 0.16) + 0.3965 * t * Math.pow(s, 0.16)).toFixed(1);
+    return (
+        13.12 +
+        0.6215 * temp -
+        11.37 * Math.pow(speed, 0.16) +
+        0.3965 * temp * Math.pow(speed, 0.16)
+    ).toFixed(1);
+
 }
 
-// Conditions check
-let windchillText = "N/A";
+let windChillText = "N/A";
 
-if (temp <= 10 && wind > 4.8) {
-  windchillText = calculateWindChill(temp, wind);
+if (temperature <= 10 && windSpeed > 4.8) {
+
+    windChillText =
+        calculateWindChill(temperature, windSpeed) + "°C";
+
 }
 
-// Output
-document.getElementById("windchill").textContent = windchillText;
+document.getElementById("windchill").textContent =
+    windChillText;
+
+document.getElementById("lastModified").textContent =
+    "Last Modification: " + document.lastModified;
