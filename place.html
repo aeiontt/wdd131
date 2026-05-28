@@ -1,110 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigeria Page</title>
 
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Discover Nigeria, its culture, attractions, weather, and landmarks.">
-
-    <meta name="author"
-        content="Bamisile Oluwadamilare Emmanuel">
-
-    <title>Nigeria Country Page</title>
-
-    <link rel="stylesheet" href="styles/place.css">
-
-    <script src="scripts/place.js" defer></script>
-
+  <link rel="stylesheet" href="styles/place.css">
+  <script defer src="scripts/place.js"></script>
 </head>
 
 <body>
 
-    <header>
+<header>
+  <h1>Nigeria</h1>
+</header>
 
-        <h1>Nigeria</h1>
+<main>
 
-    </header>
+  <!-- Responsive Hero Image -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+      <img src="images/hero-small.webp" alt="Nigeria cultural performance">
+    </picture>
+  </section>
 
-    <main>
+  <!-- About Section -->
+  <section class="info">
+    <h2>About</h2>
 
-        <!-- HERO SECTION -->
+    <p>
+      Nigeria is a vibrant country in West Africa known for its culture,
+      music, landscapes, and diverse traditions.
+    </p>
+  </section>
 
-        <section class="hero">
+  <!-- Weather Section -->
+  <section class="weather">
 
-            <picture>
+    <h2>Weather</h2>
 
-                <source media="(min-width: 768px)"
-                    srcset="images/hero-large.webp">
+    <!-- SVG for mobile -->
+    <img src="images/weather-icon.jpg"
+         alt="Weather Icon"
+         class="weather-icon">
 
-                <img src="images/hero-small.webp"
-                    alt="Beautiful view of Nigeria">
+    <p>Temperature: <span id="temp">30</span>°C</p>
 
-            </picture>
+    <p>Wind Speed: <span id="wind">10</span> km/h</p>
 
-        </section>
+    <p>Wind Chill:
+      <span id="windchill"></span>
+    </p>
 
-        <!-- DATA SECTION -->
+  </section>
 
-        <section class="card data">
+</main>
 
-            <h2>Data</h2>
-
-            <p><strong>Capital:</strong> Abuja</p>
-
-            <p><strong>Population:</strong> 223 Million</p>
-
-            <p><strong>Language:</strong> English</p>
-
-            <p><strong>Currency:</strong> Naira</p>
-
-            <p><strong>Continent:</strong> Africa</p>
-
-        </section>
-
-        <!-- WEATHER SECTION -->
-
-        <section class="card weather">
-
-            <h2>Weather</h2>
-
-            <img src="images/weather-icon.svg"
-                alt="Weather Icon"
-                class="weather-icon">
-
-            <p><strong>Temperature:</strong>
-                <span id="temperature">28</span>°C
-            </p>
-
-            <p><strong>Wind Speed:</strong>
-                <span id="windspeed">10</span> km/h
-            </p>
-
-            <p><strong>Wind Chill:</strong>
-                <span id="windchill"></span>
-            </p>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>
-            &copy;
-            <span id="currentyear"></span>
-            | Bamisile Oluwadamilare Emmanuel
-            | Nigeria
-        </p>
-
-        <p id="lastModified"></p>
-
-    </footer>
+<footer>
+  <p>
+    &copy; <span id="year"></span> |
+    Last Modified:
+    <span id="lastmod"></span>
+  </p>
+</footer>
 
 </body>
-
 </html>

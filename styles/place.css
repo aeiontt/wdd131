@@ -1,105 +1,73 @@
 :root {
-    --primary-color: #008751;
-    --secondary-color: #ffffff;
-    --accent-color: #f4f4f4;
-    --text-color: #222222;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  --primary-color: #1f4e79;
+  --secondary-color: #f5f5f5;
+  --text-color: #222;
+  --card-color: white;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--secondary-color);
+  color: var(--text-color);
 }
-
-/* HEADER */
 
 header {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 1rem;
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
 }
-
-/* MAIN */
 
 main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 1rem;
+  padding: 1rem;
+  display: grid;
+  gap: 1.5rem;
 }
-
-/* HERO */
 
 .hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* CARDS */
-
-.card {
-    background-color: white;
-    padding: 1.5rem;
-    margin-top: 1rem;
-    border-radius: 10px;
-}
-
-/* WEATHER */
-
+.info,
 .weather {
-    position: relative;
+  background: var(--card-color);
+  padding: 1rem;
+  border-radius: 10px;
 }
-
-/* SVG ICON */
 
 .weather-icon {
-    width: 70px;
-    display: block;
-    margin-bottom: 1rem;
+  width: 60px;
+  display: block;
+  margin-bottom: 1rem;
 }
-
-/* FOOTER */
 
 footer {
-    margin-top: 2rem;
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
+  text-align: center;
+  padding: 1rem;
 }
 
-/* LARGE VIEW */
+/* Desktop View */
+@media (min-width: 768px) {
 
-@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
+  .hero {
+    grid-column: 1 / 3;
+  }
 
-    .hero {
-        grid-column: 1 / 3;
-    }
+  /* Hide SVG icon in large view */
+  .weather-icon {
+    display: none;
+  }
 
-    /* PSEUDO ELEMENT */
-
-    .weather h2::after {
-        content: " ⛅";
-    }
-
-    /* HIDE SVG IN LARGE VIEW */
-
-    .weather-icon {
-        display: none;
-    }
+  /* Pseudo-element requirement */
+  .weather h2::after {
+    content: " ⛅";
+  }
 }
