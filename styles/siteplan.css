@@ -1,0 +1,101 @@
+/* Color Palette Variables matched to your schema selections */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #efac3e;
+    --bg-color: #f9f9f9;
+    --text-color: #333333;
+    --accent-bg: #ffffff;
+}
+
+/* Base Document Configuration */
+body {
+    font-family: Arial, sans-serif; /* Fallback */
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: var(--accent-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Typography Overrides */
+h1, h2, h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+header h1 {
+    color: white;
+}
+
+p, li {
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 2rem 0;
+}
+
+/* Color Schema Blocks Presentation */
+.palette-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.color-box {
+    flex: 1 1 calc(50% - 1rem);
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.primary-box { background-color: #0056b3; color: white; }
+.secondary-box { background-color: #efac3e; color: #111; }
+.light-box { background-color: #f9f9f9; color: #333; }
+.dark-box { background-color: #333333; color: white; }
+
+/* Wireframe Mock Layout Blocks */
+.wireframe-placeholder {
+    background: #eee;
+    border: 2px dashed #999;
+    padding: 2rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #555;
+    border-radius: 4px;
+}
+
+/* Mobile Styling Rule */
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .color-box {
+        flex: 1 1 100%;
+    }
+}
