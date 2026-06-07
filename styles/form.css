@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #efac3e;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --border-color: #ccc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Form layouts */
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.required {
+    color: red;
+}
+
+/* Inputs and interactive states */
+input[type="text"], input[type="date"], select, textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rating-container, .checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.rating-container label, .checkbox-container label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+/* Submission Styling */
+.submit-btn {
+    background-color: var(--secondary-color);
+    color: #111;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d9962b;
+}
+
+/* Confirmation Page Elements */
+.confirmation-container {
+    text-align: center;
+}
+
+.counter-box {
+    margin: 2rem 0;
+    background: #e9f5ff;
+    padding: 1rem;
+    border-left: 5px solid var(--primary-color);
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Mobile responsive handling rule */
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
