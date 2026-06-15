@@ -3,82 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>WDD 131 – Dynamic Web Fundamentals – Your Name</title>
-
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Your Name. HTML, CSS, JavaScript, web development, home page project.">
-
-    <meta name="author" content="Your Name">
-
+    <title>WDD 131 - Final Project</title>
+    <meta name="description" content="WDD 131 Final Project - Home Page">
+    <meta name="author" content="Student">
     <link rel="stylesheet" href="styles/base.css">
-
-    <script src="scripts/getdates.js" defer></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
 </head>
-
 <body>
-
     <header>
-        <span id="course-title">
-            WDD 131 – Dynamic Web Fundamentals
-        </span>
-
+        <div id="course-title">WDD 131 Capstone</div>
         <nav>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-
-            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">
-                Scripture
-            </a>
-
-            <a href="#">Final Project</a>
+            <a href="index.html">Home</a>
+            <a href="data.html">Data</a>
+            <a href="form.html">Contact</a>
         </nav>
     </header>
-
     <main>
-
-        <h1>Your Name</h1>
-
+        <h1>Welcome to the Final Project</h1>
         <section class="card">
-            <h2>About Me</h2>
-
-            <img src="images/profile.jpg" alt="Profile Picture">
-
-            <p>
-                My name is Your Name. I am learning web development in WDD 131.
-                I enjoy technology, coding, and learning new skills.
-            </p>
+            <h2>Project Overview</h2>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600" alt="Laptop coding" loading="lazy" width="600" height="400">
+            <p>This site demonstrates HTML, CSS Grid/Flexbox, and dynamic JavaScript injection.</p>
         </section>
-
-        <section class="card">
-            <h2>My Country</h2>
-
-            <img src="images/country.jpg" alt="Country Image">
-
-            <p>
-                I am from Nigeria. Nigeria is known for its rich culture,
-                music, food, and hardworking people.
-            </p>
-        </section>
-
     </main>
-
     <footer>
-
-        <p>
-            &copy;
-            <span id="currentyear"></span>
-            Your Name | Nigeria
-        </p>
-
+        <p>&copy; <span id="currentyear"></span> | Student Name | Location</p>
         <p id="lastModified"></p>
-
+        <p id="visit-count"></p>
     </footer>
-
 </body>
 </html>
